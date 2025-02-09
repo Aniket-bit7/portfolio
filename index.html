@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aniket's Portfolio Website</title>
+    <link rel="stylesheet" href="index.css" />
+    <script
+      src="https://kit.fontawesome.com/c2c8fa1af4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav id="logo">
+          <h1 style="font-family: Arial, Helvetica, sans-serif">
+            <strong id="A" style="font-size: 45px; color: rgb(202, 56, 2)"
+              >A</strong
+            >niket<strong style="color: rgb(202, 56, 2)">.</strong>
+          </h1>
+          <ul id="sideMenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Hello,</p>
+          <h1>I'm <span>Aniket</span> Pathak</h1>
+          <p id="para">
+            A student at Newton School of<br />Technology in CS & E(DS).
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- <--------- about --------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="myImage-Photoroom.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="subtitle">About Me</h1>
+            <p>
+              I am an aspiring AI and Data Science enthusiast, currently
+              exploring various applications of artificial intelligence and data
+              science. I am also pursuing a Bachelor’s degree in Technology at
+              Newton School of Technology in collaboration with Rishihood
+              University.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('performance')">
+                Performance
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>HTML </span> <br />I have a strong command of HTML
+                  (95%), ensuring well-structured and accessible web pages.
+                </li>
+                <li>
+                  <span>CSS </span> <br />I excel in CSS (90%), creating
+                  responsive and visually appealing designs.
+                </li>
+                <li>
+                  <span>JavaScript </span> <br />I am proficient in JavaScript
+                  (85%), building dynamic and interactive web applications.
+                </li>
+                <li>
+                  <span>Python </span> <br />I have a solid understanding of
+                  Python (80%), developing efficient and scalable solutions.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <p id="para2">To be Updated...</p>
+            </div>
+            <div class="tab-contents" id="performance">
+              <ul>
+                <li>
+                  <a href="https://leetcode.com/u/Aniketpathak_77/"
+                    ><span>LeetCode</span></a
+                  >
+                </li>
+                <li>
+                  <a href="https://codeforces.com/profile/aniketpathak24"
+                    ><span>CodeForces</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----Education------>
+    <div id="education">
+      <div class="container">
+        <h1 class="subtitle">My Education</h1>
+        <div class="education-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Class 10th</h2>
+            <p>
+              I am a Class 10th pass-out from Central Public School, Azamgarh,
+              having successfully completed the CBSE board examinations with 94%
+              marks.
+            </p>
+          </div>
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Class 12th</h2>
+            <p>
+              I am a Class 12th pass-out from Central Public School, Azamgarh,
+              having successfully completed the CBSE board examinations with
+              79.4% marks.
+            </p>
+          </div>
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Graduation</h2>
+            <p>
+              I'm currently pursuing a Bachelor’s degree in Technology at Newton
+              School of Technology in collaboration with Rishihood University.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!----Projects----->
+    <div id="projects">
+      <div class="container">
+        <h1 class="subtitle">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img
+              src="HD-wallpaper-tic-tac-toe-game-blue-background-ultra-games-other-games-color-game-design-blue-tictactoe-chalkboard-chalk-diagonal-row-winner-solved-grid-xsandos-noughtsandcrosses-blackboard.jpg"
+            />
+            <div class="layer">
+              <h3>Tic Tac Toe</h3>
+              <p>
+                This Tic-Tac-Toe game is a simple yet interactive web-based
+                version of the classic 3x3 grid game. Built using HTML, CSS, and
+                JavaScript, it provides a smooth user experience with a modern
+                design.
+              </p>
+              <a href="https://aniket-bit7.github.io/Tic_Tac_toe/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="2048_game.jpg" />
+            <div class="layer">
+              <h3>2048 Game</h3>
+              <p>
+                The 2048 Game is a classic sliding puzzle game built using HTML,
+                CSS, and JavaScript. The objective is to combine numbered tiles
+                by sliding them in four directions (up, down, left, or right) to
+                reach the 2048 tile.
+              </p>
+              <a href="https://2048game-silk.vercel.app/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="cc64c6f4ca9a44c27f2254ae6a40cab2.png" />
+            <div class="layer">
+              <h3>Capstone Project</h3>
+              <p>
+                Capstone Project: Responsive Portfolio Website Developed a
+                modern portfolio web app with interactive design, responsive
+                layout, and smooth navigation using HTML,CSS. Deployed on
+                Github, showcasing front-end development and UI/UX skills.
+              </p>
+              <a href="https://aniket-bit7.github.io/Capstone/project.html"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+
+    <!---Contact---->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="subtitle">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i> aniketpathak1073@gmail.com
+            </p>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+              <a href="https://github.com/Aniket-bit7"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/aniket-pathak-13822b311/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+            <a href="Resume-Aniket Pathak.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message or You can talk about Projects"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright &copy; Aniket. Made using
+          <i class="fa-brands fa-html5"></i> HTML,
+          <i class="fa-brands fa-css"></i> CSS <br /><i
+            class="fa-brands fa-js"
+          ></i>
+          JavaScript
+        </p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
